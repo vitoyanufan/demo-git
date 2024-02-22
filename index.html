@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="#">Madagascar Safari Park</a>
+      </div>
+      <div class="navbar-nav">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <header class="header">
+      <h1>Madagascar Safari Park</h1>
+      <p>
+        Welcome to Madagascar Safari Park, an international, nonprofit
+        conservation organization with two front doors. We integrate wildlife
+        health and care, science, and education to develop sustainable
+        conservation solutions. Conservation is at the heart of everything we
+        do. And it starts with that connection we make with people and wildlife
+        every day. Because when wildlife thrives, all life thrives.
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h1>Photos of Animals in Madagascar Safari Park</h1>
+        <div>
+          <div id="1tem-1"></div>
+          <img
+            src="asset/elephant.jpg"
+            alt="Photo mommy elephant with her cubs."
+          />
+          <div id="1tem-2"></div>
+          <img
+            src="asset/lion.jpg"
+            alt="Photo male lion watching his territories."
+          />
+          <div id="1tem-3"></div>
+          <img
+            src="asset/girrafe.jpg"
+            alt="Photo girrafe standing tall on savanna."
+          />
+          <div id="1tem-4"></div>
+          <img
+            src="asset/hipo.jpg"
+            alt="Photo hippopotamus take a bath in water puddle."
+          />
+          <div id="1tem-5 "></div>
+          <img
+            src="asset/zebra.jpg"
+            alt="Photo zebra standing tall on savanna."
+          />
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          Facts about Madagascar https://iziroam.com/blog/20191026000412-538-
+        </h2>
+        <div>
+          <ul>
+            <li>80% spesies di Madagaskar unik & langka!</li>
+            <li>Pulau terbesar keempat di dunia & ekosistemnya unik!</li>
+            <li>The Alley of Baobab / Baobab Avenue</li>
+            <li>Menyaksikan kawanan ikan paus migrasi</li>
+            <li>Kecantikan pantainya tak terbantahkan</li>
+            <li>Nenek moyangnya dari Indonesia??</li>
+          </ul>
+          <figure>
+            <picture></picture>
+            <figcaption></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <h2>Video Madagascar Safari Park Animals</h2>
+        <div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/G8lSlcOyVz8?si=iPR1W-t9vtAc1i6w"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="container-form">
+        <h2>Vote your Madagacar spirit animal</h2>
+        <form>
+          <fieldset>
+            <legend>Personal Data:</legend>
+            <div>
+              <label for="fullName">Full Name:</label>
+              <input id="fullName" type="text" required />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input id="email" type="email" required />
+            </div>
+            <div>
+              <label for="date">Date of Birth:</label>
+              <input id="date" type="date" value="2024-02-22" required />
+            </div>
+            <div>
+              <p>Are you living in Madagascar?</p>
+              <input type="radio" id="yes" name="isMadagascar" value="Male" />
+              <label for="yes">Yes</label>
+              <input type="radio" id="NO" name="isMadagascar" value="Female" />
+              <label for="yes">No</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Additional information:</legend>
+            <div>
+              <p>What do you think about Madagascar wild life?</p>
+              <input
+                id="beautiful"
+                type="checkbox"
+                name="personality"
+                value="beautiful"
+              />
+              <label for="beautiful">Beautiful</label>
+
+              <input
+                id="scary"
+                type="checkbox"
+                name="personality"
+                value="scary"
+              />
+              <label for="scary">Scary</label>
+
+              <input
+                id="cute"
+                type="checkbox"
+                name="personality"
+                value="cute"
+              />
+              <label for="cute">Cute</label>
+
+            </div>
+
+            <div>
+              <p>Tell us why you love Madagascar Animals</p>
+              <textarea rows="3"></textarea>
+            </div>
+
+            <div>
+              <p>Upload your favourite Madagascar Animal here:</p>
+              <input type="file" id="photo" name="myFavouriteAnimalPhoto" required accept="image/png, image/jpeg">
+            </div>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p></p>
+      <p>&copy; vitoyanufan 2024. All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
