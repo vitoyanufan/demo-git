@@ -64,6 +64,7 @@ body {
     cursor: pointer;
     text-shadow: 2px 2px 3px #000;
     filter: grayscale(0);
+    min-height: 250px;
 }
 
 .feature-1 {
@@ -261,12 +262,12 @@ section div ul li {
 }
 
 
-section div ul li:nth-child(odd) {
-    background: #33FFBD;
+section div ul li:nth-child(-1n+5) {
+    background: #FF5733;
 }
 
-section div ul li:nth-child(even) {
-    background: #FF5733;
+section div ul li:nth-child(1n+6) {
+    background: #33FFBD;
 }
 
 fieldset {
@@ -326,9 +327,6 @@ button:hover {
 }
 
 
-
-
-
 @media (max-width: 1024px) {
     .menu {
         order: inherit;
@@ -358,6 +356,7 @@ button:hover {
 
     body {
         font-size: 80%;
+        margin: 0px;
     }
     
     .gallery {
@@ -378,6 +377,7 @@ button:hover {
 
     body {
         font-size: 70%;
+        margin: 0px;
     }
     
     .gallery {
@@ -405,6 +405,7 @@ button:hover {
 
     body {
         font-size: 55%;
+        margin: 0px;
     }
 
 }
