@@ -244,30 +244,6 @@ iframe {
     max-width: 480px;
 }
 
-/* laptop */
-/* @media (max-width: 1366px) {
-    html {
-        font-size: 85%;
-    }
-}
-
-/* tablet */
-/* @media (max-width: 768px) {
-    html {
-        font-size: 80%;}
-} */
-
-/* hp */
-
-/* @media (max-width: 450px) {
-    html {
-        font-size: 75%;
-    }
-
-    main {width: 100%;
-    }
-} */ */
-
 @media (max-width: 768px) {
     main {
         flex-direction: column;
