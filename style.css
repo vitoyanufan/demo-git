@@ -29,6 +29,7 @@ body {
 .hero {
     grid-area: hero;
     min-height: 300px;
+    min-width: auto;
     background-image: url(asset/people.jpg);
     background-size: cover;
     background-position: center;
@@ -64,6 +65,7 @@ body {
     cursor: pointer;
     text-shadow: 2px 2px 3px #000;
     filter: grayscale(0);
+    min-height: 300px;
 }
 
 .feature-1 {
@@ -261,12 +263,12 @@ section div ul li {
 }
 
 
-section div ul li:nth-child(odd) {
-    background: #33FFBD;
+section div ul li:nth-child(-n+5) {
+    background: #FF5733;
 }
 
-section div ul li:nth-child(even) {
-    background: #FF5733;
+section div ul li:nth-child(n+6) {
+    background: #2f975a;
 }
 
 fieldset {
@@ -319,15 +321,12 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-button:hover {
-    color: black;
-    background-color: white;
-    transition-duration: 0.8s;
+footer {
+    /* text-wrap: wrap; */
+    text-align: center;
+    background: #6d6c6c;
+    color: #fff;
 }
-
-
-
-
 
 @media (max-width: 1024px) {
     .menu {
@@ -363,6 +362,7 @@ button:hover {
     .gallery {
         display: block;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -406,5 +406,31 @@ button:hover {
     body {
         font-size: 55%;
     }
+    .gallery {
+        display: block;
+    }
 
-}
+    body {
+        margin: 0px;
+    }
+
+    .hero {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .feature-1 {
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+    }
+
+    .feature-2 {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .container-form {
+        max-width: 370px;
+    }
+
+    }
